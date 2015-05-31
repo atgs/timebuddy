@@ -58,6 +58,21 @@ h6
     margin-right:auto;
 }
 
+.text-left
+{
+    text-align: left;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.text-right
+{
+    text-align: right;
+}
+
 #header
 {
     padding-top:20px;
@@ -89,14 +104,34 @@ h6
     }
 }
 
-.appstore
+.appstores
 {
     display: block;
-    width:auto;
     height:80px;
     background-color:white;
     margin-top:20px;
     clear:both;
+
+    .appstore
+    {
+        width:50%;
+        float:left;
+        line-height: 80px;
+        vertical-align: middle;
+        text-align: center;
+
+        img
+        {
+            vertical-align: middle;
+        }
+    }
+
+    &::after
+    {
+        display:block;
+        content:'';
+        clear:both;
+    }
 }
 
 .catchcopy
@@ -131,12 +166,11 @@ h6
 {
     width:auto;
     height:320px;
-    background-attachment: fixed;
     background-size: cover;
     background-position: center center;
     background-color:white;
     background-repeat: no-repeat;
-    z-index: -1;
+    background-attachment: fixed;
 }
 
 .sample1
