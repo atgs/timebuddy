@@ -200,10 +200,18 @@ h6
 #social
 {
     position: fixed;
-    top:0px;
-    right:30px;
+    top:5px;
+    right:10px;
     width:320px;
-    height:30px;
+    height:20px;
+    text-align: right;
+    line-height: 20px;
+    vertical-align: bottom;
+}
+
+.twitter-tweet-button
+{
+    vertical-align: bottom;
 }
 
 @media screen and (max-width:768px)
