@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import "compass";
+
+$background-color : #60E645;
+$container-size : 960px;
+
+body
+{
+    background-color: $background-color;
+    font-family: Helvetica,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,"MS Pゴシック","MS PGothic",sans-serif;
+    font-size:14px;
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: bold;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+h1
+{
+    font-size:32px;
+}
+
+h2
+{
+    font-size:28px;
+}
+
+h3
+{
+    font-size:24px;
+}
+
+h4
+{
+    font-size:20px;
+}
+
+h5
+{
+    font-size:18px;
+}
+
+h6
+{
+    font-size:16px;
+}
+
+.container
+{
+    display:block;
+    width:$container-size;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#header
+{
+    padding-top:20px;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    &::after
+    {
+        display:block;
+        clear:both;
+        content:'';
+    }
+
+    #logo_title
+    {
+        display:block;
+        width:$container-size * 860px / 1182px;
+        height:auto;
+        float:left;
+    }
+
+    #logo_dog
+    {
+        display: block;
+        width:$container-size * 270px / 1182px;
+        height:auto;
+        float:right;
+    }
+}
+
+.appstore
+{
+    display: block;
+    width:auto;
+    height:80px;
+    background-color:white;
+    margin-top:20px;
+    clear:both;
+}
+
+.catchcopy
+{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    font-line:1.5em;
+}
+
+.icon
+{
+    background-image: url(../img/icon-buddy.png);
+    background-position: 3px center;
+    background-repeat: no-repeat;
+    background-size: 27px 32px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    padding-left:32px;
+    margin-top:10px;
+    margin-bottom: 10px;
+
+    .marker
+    {
+        background: linear-gradient(transparent 50%, #FFFF45 5%);
+    }
+}
+
+@mixin sample
+{
+    width:auto;
+    height:320px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-color:white;
+    background-repeat: no-repeat;
+}
+
+.sample1
+{
+    @include sample;
+    background-image:url(../img/sample-001.png);
+}
+
+.sample2
+{
+    @include sample;
+    background-image:url(../img/sample-002.png);
+}
+
+.sample3
+{
+    @include sample;
+    background-image:url(../img/sample-003.jpg);
+}
+
+#footer
+{
+    background-color:white;
+    width:auto;
+    padding-top:120px;
+    padding-bottom:120px;
+
+    .contact
+    {
+        text-align: center;
+        font-size:18px;
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+
+    .presented
+    {
+        text-align: center;
+        line-height: 60px;
+        vertical-align: middle;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .atgs
+    {
+        width:140px;
+        height:60px;
+        vertical-align: middle;
+        line-height: 60px;
+    }
+
+    .copyright
+    {
+        margin-top:10px;
+        text-align: center;
+        font-size:14px;
+        color:#333333;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    .container
+    {
+        width:auto;
+    }
+
+    h1
+    {
+        font-size:24px;
+    }
+
+    h2
+    {
+        font-size:20px;
+    }
+
+    h3
+    {
+        font-size:18px;
+    }
+
+    h4
+    {
+        font-size:16px;
+    }
+
+    h5
+    {
+        font-size:14px;
+    }
+
+    h6
+    {
+        font-size:12px;
+    }
+
+    #header
+    {
+        padding-top:20px;
+
+        #logo_title
+        {
+            width:(860 / 1182)*100%;
+        }
+
+        #logo_dog
+        {
+            width:(270 / 1182)*100%;
+        }
+    }
+}
