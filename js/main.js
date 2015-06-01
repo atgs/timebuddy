@@ -2,10 +2,9 @@
 {
     $(function()
     {
-        $('.q-and-a a').on('click', function(e)
+        $('.q-and-a .question').on('click', function()
         {
-            e.preventDefault();
-            return false;
-        })
+            $(this).closest('.q-and-a').hasClass('open') ? $(this).closest('.q-and-a').removeClass('open') : $(this).closest('.q-and-a').addClass('open');
+        });
     });
 })(jQuery);
