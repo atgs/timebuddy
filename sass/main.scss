@@ -197,6 +197,73 @@ h6
     background-image:url(../img/sample-003.jpg);
 }
 
+.q-and-a
+{
+    margin:0px;
+    padding:0px;
+    margin-top:10px;
+    margin-bottom:10px;
+
+    li
+    {
+        list-style: none;
+        margin:0px;
+        margin-bottom:20px;
+        padding:0px;
+
+        a
+        {
+            display:block;
+            width:auto;
+            height: 35px;
+            line-height: 35px;
+            vertical-align: middle;
+            font-size:20px;
+            text-decoration: none;
+            background-image:url(../img/icon_q.png);
+            background-size:35px 35px;
+            background-position: 5px 5px;
+            background-repeat: no-repeat;
+            padding:5px;
+            padding-left:45px;
+            background-color: white;
+            color: #333;
+            @include border-radius(6px);
+            word-break: break-all;
+            overflow: hidden;
+
+            &:focus
+            {
+                height:auto;
+                .answer
+                {
+                    padding:5px;
+                    padding-left:45px;
+                    height:auto;
+                    min-height:35px;
+                }
+            }
+
+            .answer
+            {
+                display:block;
+                width:auto;
+                height:0px;
+                padding:0px;
+                padding-left:45px;
+                overflow: hidden;
+                background-image:url(../img/icon_a.png);
+                background-size:35px 35px;
+                background-position: 5px 5px;
+                background-repeat: no-repeat;
+                line-height: 35px;
+                margin-left:-20px;
+                word-break: break-all;
+            }
+        }
+    }
+}
+
 #footer
 {
     background-color:white;
