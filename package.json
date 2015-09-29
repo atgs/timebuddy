@@ -1,0 +1,30 @@
+{
+  "name": "TimeBuddy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atgs/timebuddy.git"
+  },
+  "keywords": [
+    "TimeBuddy",
+    "iOS",
+    "Android",
+    "AppsJapan"
+  ],
+  "author": "fromKK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atgs/timebuddy/issues"
+  },
+  "homepage": "https://github.com/atgs/timebuddy",
+  "devDependencies": {
+    "browser-sync": "^2.9.6",
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0"
+  }
+}
